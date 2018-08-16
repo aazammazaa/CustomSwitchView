@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/backgroudColor">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="@string/switch1"
+        android:textSize="20sp"/>
+
+    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+        android:id="@+id/switchView"
+        app:buttonColor="@color/buttonColor"
+        app:buttonImage="@drawable/flash_24dp"
+        app:shadowColor="@color/shadowColor"
+        app:leftColor="@color/onColor"
+        app:rightColor="@color/offColor"
+        app:isOn="true"
+        app:leftImage="@drawable/drawleft"
+        app:rightImage="@drawable/drawright"
+        app:extraRadius="10dp"
+        app:ratio="two"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="@string/switch2"
+        android:textSize="20sp"/>
+
+    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+        android:id="@+id/switchView2"
+        app:buttonColor="@color/buttonColor"
+        app:shadowColor="@color/shadowColor"
+        app:leftColor="@color/onColor"
+        app:rightColor="@color/offColor"
+
+
+        app:ratio="four"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="@string/switch3"
+        android:textSize="20sp"/>
+
+    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+        android:id="@+id/switchView3"
+        app:buttonColor="@color/buttonColor"
+        app:shadowColor="@color/shadowColor"
+        app:leftColor="@color/onColor"
+        app:rightColor="@color/offColor"
+
+        app:extraRadius="0dp"
+        app:ratio="four"
+        android:layout_marginTop="10dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:background="@color/colorPrimary"/>
+
+
+</LinearLayout>
+<!--xmlns:switchView="http://schemas.android.com/apk/res/com.aazamn.customswitch"-->

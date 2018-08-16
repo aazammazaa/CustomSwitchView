@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CustomSwitch</string>
+    <string name="switch1">This view with all the available atributes and all image arrtibute overLoading the color attribute of the relative property </string>
+    <string name="switch2">This view have change in ratio with  default extra radius no overloading on color properties</string>
+    <string name="switch3">Removing extra radius </string>
+
+</resources>
