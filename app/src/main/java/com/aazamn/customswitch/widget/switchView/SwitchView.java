@@ -17,7 +17,7 @@ import android.view.View;
 import com.aazamn.customswitch.R;
 
 
-public class SwitchViewTest extends View {
+public class SwitchView extends View {
 
     private int layoutHeight = 0;
     private int layoutWidth = 0;
@@ -62,7 +62,7 @@ public class SwitchViewTest extends View {
     private  OnCheckedChangeListener mOnCheckedChangeListener;
 
 
-    public SwitchViewTest(Context context, @Nullable AttributeSet attrs) {
+    public SwitchView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         setBackground(null);
         parseAttributes(context.obtainStyledAttributes(attrs,
@@ -258,7 +258,7 @@ public class SwitchViewTest extends View {
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                switch (event.getAction() & event.ACTION_MASK) {
+                switch (event.getAction() & MotionEvent.ACTION_MASK) {
                     case MotionEvent.ACTION_DOWN:
                         circle.setShadowLayer(radus+30, /*minAllow*/0.0f, /*top+radus*/0.0f, /*0xFF000000*/shadowColor);
                         invalidate();
@@ -393,13 +393,13 @@ public class SwitchViewTest extends View {
             move(check);
         }
     }
-    public static interface OnCheckedChangeListener {
+    public interface OnCheckedChangeListener {
         /**
          * Called when the checked state of a compound button has changed.
          *
          * @param switchView The switch button view whose state has changed.
          * @param isChecked  The new checked state of buttonView.
          */
-        void onCheckedChanged(SwitchViewTest switchView, boolean isChecked);
+        void onCheckedChanged(SwitchView switchView, boolean isChecked);
     }
 }

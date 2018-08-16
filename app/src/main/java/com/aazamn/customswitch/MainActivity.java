@@ -10,21 +10,21 @@ import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import com.aazamn.customswitch.widget.switchView.SwitchViewTest;
+import com.aazamn.customswitch.widget.switchView.SwitchView;
 
 public class MainActivity extends AppCompatActivity {
 
-    SwitchViewTest switchView;
+    SwitchView switchView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        switchView = (SwitchViewTest) findViewById(R.id.switchView);
+        switchView = findViewById(R.id.switchView);
 
         //switchView.setCheck(false);
-        switchView.setOnCheckedChangeListener(new SwitchViewTest.OnCheckedChangeListener() {
+        switchView.setOnCheckedChangeListener(new SwitchView.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(SwitchViewTest switchView, boolean isChecked) {
+            public void onCheckedChanged(SwitchView switchView, boolean isChecked) {
                 Log.i("Switch View", String.valueOf(isChecked));
             }
         });

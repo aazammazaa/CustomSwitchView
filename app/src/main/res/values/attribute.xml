@@ -10,6 +10,8 @@
     <attr name="ratio" format="enum">
         <enum name="two" value="2" />
         <enum name="four" value="4"/>
+        <enum name="six" value="6"/>
+        <enum name="seven" value="7"/>
     </attr>
     <attr name="extraRadius" format="dimension"/>
     <attr name="shadowColor" format="color"/>

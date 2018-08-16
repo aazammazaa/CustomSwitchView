@@ -18,7 +18,7 @@
         android:text="@string/switch1"
         android:textSize="20sp"/>
 
-    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+    <com.aazamn.customswitch.widget.switchView.SwitchView
         android:id="@+id/switchView"
         app:buttonColor="@color/buttonColor"
         app:buttonImage="@drawable/flash_24dp"
@@ -43,7 +43,7 @@
         android:text="@string/switch2"
         android:textSize="20sp"/>
 
-    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+    <com.aazamn.customswitch.widget.switchView.SwitchView
         android:id="@+id/switchView2"
         app:buttonColor="@color/buttonColor"
         app:shadowColor="@color/shadowColor"
@@ -66,7 +66,7 @@
         android:text="@string/switch3"
         android:textSize="20sp"/>
 
-    <com.aazamn.customswitch.widget.switchView.SwitchViewTest
+    <com.aazamn.customswitch.widget.switchView.SwitchView
         android:id="@+id/switchView3"
         app:buttonColor="@color/buttonColor"
         app:shadowColor="@color/shadowColor"
