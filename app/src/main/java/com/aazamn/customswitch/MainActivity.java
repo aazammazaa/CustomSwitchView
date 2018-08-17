@@ -3,12 +3,6 @@ package com.aazamn.customswitch;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.CompoundButton;
-import android.widget.RelativeLayout;
-import android.widget.Switch;
-import android.widget.Toast;
 
 import com.aazamn.customswitch.widget.switchView.SwitchView;
 

@@ -81,6 +81,22 @@
 
         android:background="@color/colorPrimary"/>
 
+    <com.aazamn.customswitch.widget.switchView.SwipeSwitchView
+        android:id="@+id/switchView4"
+        app:buttonColor="@color/buttonColor"
+        app:shadowColor="@color/shadowColor"
+        app:leftColor="@color/onColor"
+        app:rightColor="@color/offColor"
+        app:extraRadius="6dp"
+        app:ratio="four"
+        app:borderColor="#fff"
+        app:borderThickness="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@color/colorPrimary"/>
+
 
 </LinearLayout>
 <!--xmlns:switchView="http://schemas.android.com/apk/res/com.aazamn.customswitch"-->
