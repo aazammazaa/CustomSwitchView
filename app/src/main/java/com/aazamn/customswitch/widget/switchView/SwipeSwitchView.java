@@ -122,6 +122,8 @@ public class SwipeSwitchView  extends View {
         a.recycle();
     }
 
+   
+
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         // The first thing that happen is that we call the superclass
@@ -190,6 +192,7 @@ public class SwipeSwitchView  extends View {
         invalidate();
 
     }
+
 
 
 

@@ -80,23 +80,32 @@
         android:layout_height="100dp"
 
         android:background="@color/colorPrimary"/>
-
-    <com.aazamn.customswitch.widget.switchView.SwipeSwitchView
-        android:id="@+id/switchView4"
-        app:buttonColor="@color/buttonColor"
-        app:shadowColor="@color/shadowColor"
-        app:leftColor="@color/onColor"
-        app:rightColor="@color/offColor"
-        app:extraRadius="6dp"
-        app:ratio="four"
-        app:borderColor="#fff"
-        app:borderThickness="3dp"
-        android:layout_marginTop="10dp"
+    <com.aazamn.customswitch.widget.switchView.MyNestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <com.aazamn.customswitch.widget.switchView.SwipeSwitchView
+            android:id="@+id/switchView4"
+            app:buttonColor="@color/buttonColor"
+            app:shadowColor="@color/shadowColor"
+            app:leftColor="@color/onColor"
+            app:rightColor="@color/offColor"
+            app:extraRadius="6dp"
+            app:ratio="four"
+            app:borderColor="#fff"
+            app:borderThickness="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
 
-        android:background="@color/colorPrimary"/>
+            android:background="@color/colorPrimary"/>
 
+
+        </LinearLayout>
+    </com.aazamn.customswitch.widget.switchView.MyNestedScrollView>
 
 </LinearLayout>
 <!--xmlns:switchView="http://schemas.android.com/apk/res/com.aazamn.customswitch"-->
