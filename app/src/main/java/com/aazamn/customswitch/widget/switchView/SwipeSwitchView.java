@@ -66,6 +66,8 @@ public class SwipeSwitchView  extends View {
 
     private float oldPoint=0f;
     private float newPoint=0f;
+    
+    private boolean disable = false;
 
     public SwipeSwitchView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -264,11 +266,11 @@ public class SwipeSwitchView  extends View {
         drawable.setBounds(0, 0, canvass.getWidth(), canvass.getHeight());
         drawable.draw(canvass);*/
 
-
+        
         setOnTouchListener(new OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-
+                if(!disable){
                 switch (event.getAction() & MotionEvent.ACTION_MASK) {
                     case MotionEvent.ACTION_DOWN:
                         oldPoint = event.getX();
@@ -305,6 +307,7 @@ public class SwipeSwitchView  extends View {
                             move(isOn);
                         observeTouch=true;
                         return true;
+                }
                 }
                 return true;
             }
@@ -428,4 +431,11 @@ public class SwipeSwitchView  extends View {
          */
         void onCheckedChanged(SwipeSwitchView swipeSwitchView, boolean isChecked);
     }
+    public boolean isDisable() {
+		return disable;
+	}
+
+	public void setDisable(boolean disable) {
+		this.disable = disable;
+	}
 }
