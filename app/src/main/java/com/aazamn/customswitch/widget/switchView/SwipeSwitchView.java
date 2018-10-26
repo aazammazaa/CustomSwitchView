@@ -98,6 +98,8 @@ public class SwipeSwitchView  extends View {
         borderStroke = a.getDimension(R.styleable.switchView_borderThickness,borderStroke);
 
         layoutRatio = a.getInt(R.styleable.switchView_ratio,layoutRatio);
+	
+	disable = a.getBoolean(R.styleable.switchView_isDisable,disable);
 
        /* barWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwBarWidth, barWidth);
         rimWidth = (int) a.getDimension(R.styleable.ProgressWheel_pwRimWidth, rimWidth);
