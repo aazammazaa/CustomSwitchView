@@ -18,6 +18,7 @@
         <attr name="borderThickness" format="dimension"/>
         <attr name="shadowColor" format="color"/>
         <attr name="isOn" format="boolean"/>
+        <attr name="isDisable" format="boolean"/>
 
     </declare-styleable>
     <!--<declare-styleable name="swipeSwitchView">
